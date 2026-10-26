@@ -22,7 +22,7 @@
 <details style="position:relative"><summary style="list-style:none;cursor:pointer;padding:var(--space-2) 0;color:var(--color-text);font-weight:600;font-size:15px">Services &#9662;</summary><div style="position:absolute;top:100%;left:0;z-index:20;background:#fff;border:2px solid var(--color-divider);min-width:260px;max-width:calc(100vw - 32px)"><a class="hv0" href="Mould-Removal.html" style="display:block;padding:var(--space-3) var(--space-4);color:var(--color-text);text-decoration:none;font-weight:600;font-size:15px">Mould Removal</a><a class="hv0" href="Black-Mould-Removal.html" style="display:block;padding:var(--space-3) var(--space-4);color:var(--color-text);text-decoration:none;font-weight:600;font-size:15px">Black Mould Removal</a><a class="hv0" href="Damp-and-Condensation-Treatment.html" style="display:block;padding:var(--space-3) var(--space-4);color:var(--color-text);text-decoration:none;font-weight:600;font-size:15px">Damp and Condensation Treatment</a><a class="hv0" href="Anti-Mould-Protection.html" style="display:block;padding:var(--space-3) var(--space-4);color:var(--color-text);text-decoration:none;font-weight:600;font-size:15px">Anti-Mould Protection</a><a class="hv0" href="Water-Damage-Clean-Up.html" style="display:block;padding:var(--space-3) var(--space-4);color:var(--color-text);text-decoration:none;font-weight:600;font-size:15px">Water Damage Clean-Up</a><a class="hv0" href="Commercial-Mould-Removal.html" style="display:block;padding:var(--space-3) var(--space-4);color:var(--color-text);text-decoration:none;font-weight:600;font-size:15px">Commercial Mould Removal</a></div></details>
 <a class="hv1" href="index.html#health" style="color:var(--color-text);text-decoration:none;padding:var(--space-2) 0">Health guide</a>
 <a class="hv1" href="Contact.html" style="color:var(--color-text);text-decoration:none;padding:var(--space-2) 0">Contact</a>
-<a href="tel:02080660360" class="btn btn-primary" style="text-decoration:none;white-space:nowrap">Call 020 8066 0360</a>
+<a href="tel:02039066167" class="btn btn-primary" style="text-decoration:none;white-space:nowrap">Call 020 3906 6167</a>
 </nav>
 </div>
 </header>
@@ -109,11 +109,11 @@
 </div>
 </div>
 <script>
-(function(){var f=document.getElementById('enq-form');if(!f)return;var to=['contactus','icecleaning.co.uk'].join('@');
+(function(){var f=document.getElementById('enq-form');if(!f)return;
 f.addEventListener('submit',function(e){e.preventDefault();var fd=new FormData(f);if(fd.get('_honey'))return;
-var b={_subject:'New enquiry - mouldhealth.org.uk',_template:'table',_captcha:'false'};fd.forEach(function(v,k){if(k!=='_honey')b[k]=v;});
+var b={_subject:'New enquiry - mouldhealth.org.uk'};fd.forEach(function(v,k){if(k!=='_honey')b[k]=v;});
 var btn=document.getElementById('enq-btn');btn.disabled=true;btn.textContent='Sending...';document.getElementById('enq-err').hidden=true;
-fetch('https://formsubmit.co/ajax/'+to,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(b)})
+fetch('https://formspree.io/f/xaeeeeln',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(b)})
 .then(function(r){if(!r.ok)throw 0;f.hidden=true;document.getElementById('enq-sent').hidden=false;})
 .catch(function(){btn.disabled=false;btn.textContent='Send enquiry';document.getElementById('enq-err').hidden=false;});});})();
 </script>
